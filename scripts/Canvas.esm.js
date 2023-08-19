@@ -7,6 +7,7 @@ export const CANVAS_HEIGHT = 480;
 class Canvas extends Common {
   constructor() {
     super(GAME_SCREEN_ID);
+    this.configureCanvas();
   }
 
   configureCanvas() {
