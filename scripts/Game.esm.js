@@ -3,6 +3,12 @@ import { Common, VISIBLE_SCREEN } from "./Common.esm.js";
 import { gameLevels } from "./GameLevels.esm.js";
 import { DATALOADED_EVENT_NAME } from "./Loader.esm.js";
 
+const gameState = {
+  pointsToWin: 7000,
+  getPlayerPoints: () => 1000,
+  getLeftMovement: () => 30,
+};
+
 class Game extends Common {
   constructor() {
     super();
@@ -16,7 +22,7 @@ class Game extends Common {
   }
 
   animate() {
-    canvas.drawGameOnCanvas();
+    canvas.drawGameOnCanvas(gameState);
     this.animationFrame = window.requestAnimationFrame(() => this.animate());
   }
 }

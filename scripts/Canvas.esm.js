@@ -19,12 +19,25 @@ class Canvas extends Common {
     this.context.fillStyle = "white";
   }
 
-  drawGameOnCanvas() {
+  drawGameOnCanvas(gameState) {
     this.drawBackground();
+    this.drawPointsToWin(gameState.pointsToWin);
+    this.drawPlayersPoints(gameState.getPlayerPoints());
+    this.drawLeftMovement(gameState.getLeftMovement());
   }
 
   drawBackground() {
     this.context.drawImage(media.backgroundImage, 0, 0);
+  }
+
+  drawPointsToWin(pointsToWin) {
+    this.context.fillText(`${pointsToWin}`, 520, 92);
+  }
+  drawPlayersPoints(playerPoints) {
+    this.context.fillText(`${playerPoints}`, 520, 163);
+  }
+  drawLeftMovement(leftMovement) {
+    this.context.fillText(`${leftMovement}`, 520, 234);
   }
 }
 
