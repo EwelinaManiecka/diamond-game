@@ -1,6 +1,6 @@
 import { canvas } from "./Canvas.esm.js";
 import { Common, VISIBLE_SCREEN } from "./Common.esm.js";
-import { gameLevels } from "./GameLevels.esm.js";
+import { gameLevels } from "./gameLevels.esm.js";
 import { DATALOADED_EVENT_NAME } from "./Loader.esm.js";
 
 const gameState = {
