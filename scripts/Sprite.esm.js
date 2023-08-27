@@ -1,5 +1,4 @@
-import { canvas } from "./Common.esm.js";
-
+import { canvas } from "./Canvas.esm.js";
 export class Sprite {
   constructor(
     x,

@@ -44,7 +44,8 @@ class LevelSelect extends Common {
   }
 
   loadLevel(level) {
-    media.backgroundImage = loader.loadImage("img/levelbackground.png");
+    media.diamondsSprite = loader.loadImage("../img/diamonds-transparent.png");
+    media.backgroundImage = loader.loadImage("../img/levelbackground.png");
     window.addEventListener(DATALOADED_EVENT_NAME, () => game.playLevel(level));
   }
 }

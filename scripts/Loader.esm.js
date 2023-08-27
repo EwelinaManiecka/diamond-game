@@ -19,7 +19,7 @@ class Loader extends Common {
   }
 
   loadImage(imageUrl) {
-    this.changeVisibilityScreen(this.totalElement, VISIBLE_SCREEN);
+    this.changeVisibilityScreen(this.element, VISIBLE_SCREEN);
     this.isAllLoaded = false;
     this.totalCounter++;
     this.totalElement = this.totalCounter;
